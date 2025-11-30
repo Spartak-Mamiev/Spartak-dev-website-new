@@ -1,0 +1,46 @@
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  transform: translateX(-50px);
+}
+
+.avatarImage  {
+width: 50%;
+object-fit: fill;
+}
+
+.introText{
+width: 100%;
+}
+
+.contactMeBtn,
+.myProjectsBtn
+ {
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: invert(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.contactMeBtn:hover,
+.myProjectsBtn:hover
+ {
+  filter: invert(0);
+}
+
+.contactMeBtn:active,
+.myProjectsBtn:active{
+  transform: scale(0.95);
+}
+.contactMeBtn img,
+.myProjectsBtn img{
+width: 250px;
+}
+
+.introCtaButtons{
+transform: translateX(100px)
+}

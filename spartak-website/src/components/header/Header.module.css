@@ -5,23 +5,31 @@
   padding: 10px 20px;
 }
 
-.nav-bar img {
-  width: 150px;
+.navBar img {
+  width: 160px;
 }
 
 .logo{
-  width: 300px;
+  width: 200px;
 }
 
-.nav-bar ul{
+.navBar ul{
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.nav-bar ul li {
+.navBar ul li {
   list-style: none;
   cursor: pointer;
+}
+
+.home img,
+.about img,
+.skills img,
+.projects img,
+.contact img {
+  transition: all 0.2s ease-in-out;
 }
 
 .home img:hover{
@@ -45,15 +53,15 @@ background-size: contain;
 background: url('nav-bg-4.png') no-repeat center center;
   background-size: contain;
 }
-#toggle{
+.toggle{
   display: none;
   cursor: pointer;
 }
 
-.mode-toggle-container label{  
+.modeToggleContainer label{  
   cursor: pointer;
 }
 
-.mode-toggle-container img{
+.modeToggleContainer img{
   width: 150px;
 }

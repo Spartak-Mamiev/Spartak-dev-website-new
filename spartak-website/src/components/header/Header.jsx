@@ -1,40 +1,40 @@
-import './Header.css';
+import styles from './Header.module.css';
 
 export function Header() {
   return (
-    <div className="header">
+    <div className={styles.header}>
       <img
         src="public/logo.png"
         alt="Logo"
-        className="logo"
+        className={styles.logo}
       />
-      <div className="nav-bar">
+      <div className={styles.navBar}>
         <ul>
-          <li className="home">
+          <li className={styles.home}>
             <img
               src="home.png"
               alt="home icon"
             />
           </li>
-          <li className="about">
+          <li className={styles.about}>
             <img
               src="about.png"
               alt="about icon"
             />
           </li>
-          <li className="skills">
+          <li className={styles.skills}>
             <img
               src="skills.png"
               alt="skills icon"
             />
           </li>
-          <li className="projects">
+          <li className={styles.projects}>
             <img
               src="projects.png"
               alt="projects icon"
             />
           </li>
-          <li className="contact">
+          <li className={styles.contact}>
             <img
               src="contact.png"
               alt="contact icon"
@@ -43,7 +43,7 @@ export function Header() {
         </ul>
       </div>
 
-      <div className="mode-toggle-container">
+      <div className={styles.modeToggleContainer}>
         <label htmlFor="toggle">
           <img
             src="sun-icon.png"
@@ -53,6 +53,7 @@ export function Header() {
         <input
           type="checkbox"
           id="toggle"
+          className={styles.toggle}
         />
       </div>
     </div>
