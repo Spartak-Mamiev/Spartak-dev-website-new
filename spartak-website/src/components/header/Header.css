@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-bar img {
+  width: 150px;
+}
+
+.logo{
+  width: 300px;
+}
+
+.nav-bar ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.home img:hover{
+background: url('nav-bg.png') no-repeat center center;
+  background-size: contain;
+}
+
+.about img:hover{
+background: url('nav-bg-2.png') no-repeat center center;
+  background-size: contain;
+}
+.skills img:hover{
+background: url('nav-bg-3.png') center center;
+background-size: contain;
+}
+.projects img:hover{
+background: url('nav-bg.png') center center;
+background-size: contain;
+}
+.contact img:hover{
+background: url('nav-bg-4.png') no-repeat center center;
+  background-size: contain;
+}
+#toggle{
+  display: none;
+  cursor: pointer;
+}
+
+.mode-toggle-container label{  
+  cursor: pointer;
+}
+
+.mode-toggle-container img{
+  width: 150px;
+}
