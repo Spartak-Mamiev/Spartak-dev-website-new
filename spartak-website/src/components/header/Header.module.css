@@ -22,35 +22,38 @@
 .navBar ul li {
   list-style: none;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-.home img,
-.about img,
-.skills img,
-.projects img,
-.contact img {
-  transition: all 0.2s ease-in-out;
+.navBar ul li:hover {
+  filter: invert(1);
+  transform: scale(1.05);
 }
+
+.navBar ul li:active {
+  transform: scale(0.95);
+}
+
 
 .home img:hover{
-background: url('nav-bg.png') no-repeat center center;
+background: url('nav-bg-black-1.png') no-repeat center center;
   background-size: contain;
 }
 
 .about img:hover{
-background: url('nav-bg-2.png') no-repeat center center;
+background: url('nav-bg-black-2.png') no-repeat center center;
   background-size: contain;
 }
 .skills img:hover{
-background: url('nav-bg-3.png') center center;
+background: url('nav-bg-black-3.png') center center;
 background-size: contain;
 }
 .projects img:hover{
-background: url('nav-bg.png') center center;
+background: url('nav-bg-black-3.png') center center;
 background-size: contain;
 }
 .contact img:hover{
-background: url('nav-bg-4.png') no-repeat center center;
+background: url('nav-bg-black-4.png') no-repeat center center;
   background-size: contain;
 }
 .toggle{

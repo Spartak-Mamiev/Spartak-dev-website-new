@@ -1,0 +1,49 @@
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.aboutHeader{
+width: 600px;
+
+}
+
+.aboutImages{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+}
+
+.about img{
+  width: 45%;
+  object-fit: contain;
+}
+
+
+
+.aboutImages img{
+  margin: auto;
+  width: 80%;
+}
+
+.clapperImg{
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.marathonImg{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.freiaImg {
+  grid-area: 2 / 1 / 3 / 3;
+}
