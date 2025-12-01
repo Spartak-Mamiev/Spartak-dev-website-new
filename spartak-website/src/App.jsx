@@ -9,8 +9,6 @@ function App() {
     <>
       <Header />
       <Introduction />
-      <Skills />
-      <Projects />
     </>
   );
 }
