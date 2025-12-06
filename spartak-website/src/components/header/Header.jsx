@@ -3,11 +3,13 @@ import styles from './Header.module.css';
 export function Header() {
   return (
     <div className={styles.header}>
-      <img
-        src="public/logo.png"
-        alt="Logo"
-        className={styles.logo}
-      />
+      <div className={styles.logoContainer}>
+        <img
+          src="public/logo.png"
+          alt="Logo"
+          className={styles.logo}
+        />
+      </div>
       <div className={styles.navBar}>
         <ul>
           <li className={styles.home}>

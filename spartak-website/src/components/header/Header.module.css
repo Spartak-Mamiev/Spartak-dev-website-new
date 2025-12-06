@@ -10,11 +10,21 @@
 }
 
 .navBar img {
-  width: 160px;
+  width: 100%;
+  min-width: 80px;
 }
 
-.logo{
+.logoContainer {
   width: 200px;
+  min-width: 100px;
+}
+.logo {
+  width: 100%;
+}
+
+.navBar {
+  width: 60%;
+  min-width: 300px;
 }
 
 .navBar ul{
@@ -49,7 +59,7 @@ background: url('nav-bg-black-2.png') no-repeat center center;
   background-size: contain;
 }
 .skills img:hover{
-background: url('nav-bg-black-3.png') center center;
+background: url('nav-bg-black-4.png') center center;
 background-size: contain;
 }
 .projects img:hover{
@@ -65,10 +75,59 @@ background: url('nav-bg-black-4.png') no-repeat center center;
   cursor: pointer;
 }
 
+
 .modeToggleContainer label{  
   cursor: pointer;
 }
 
 .modeToggleContainer img{
-  width: 150px;
+  width: 100%;
+}
+
+.modeToggleContainer{
+  width: 200px;
+}
+@media screen and (max-width: 900px) {
+
+
+.header{width: 100vw;
+  padding: 0 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logoContainer{
+  width: 120px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.modeToggleContainer{
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: end;
+  width: 100px;
+}
+.navBar{
+  width: 80vw;
+  min-width: unset;
+  align-self: center;
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+
+.navBar ul{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  justify-content: center;
+  justify-content: space-between;
+  align-self: center;
+}
+.navBar ul li{
+  width: 0px;
+}  
+.contact{
+  margin-left: 20px;
+}
 }

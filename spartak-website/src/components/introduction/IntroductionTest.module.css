@@ -8,15 +8,29 @@
   justify-self: center;
 }
 
-.avatarImage  {
-width: 60%;
-min-width: 600px;
+.avatarImageContainer{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.avatarImage  {
+width: 80%;
+min-width: 600px;
+}
+
+.introTextContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .introText{
-width: 90%;
-min-width: 300px;
+width: 80%;
+
 }
 
 .contactMeBtn,
@@ -43,6 +57,7 @@ min-width: 300px;
 .introCtaButtons{
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .contactMeBtn img,
@@ -63,11 +78,14 @@ flex-direction: column;
     flex-direction: column-reverse;
     height: auto;
     padding: 20px 0;
-    margin-top: 60px;
+    margin-top: 20px;
+  }
+  .avatarImageContainer{
+    width: 100%;
   }
 
   .avatarImage {
-    width: 70%;
+    width: 80%;
     min-width: unset;
     margin-bottom: 20px;
   }
@@ -91,23 +109,29 @@ flex-direction: column;
 
 @media screen and (max-width: 400px) {
 
-  img{
-    width: 60%;
-    min-width: unset;
-  }
-
   .introduction{
     margin:0;
     padding: 0;
   }
 
-   .avatarImage {
+  .avatarImageContainer{
+    width: 100%;
+  }
+  .avatarImage {
+    width: 80%;
     min-width: unset;
   }
 
-  .introText {
+  .introText{
+    width: 100%;
+  }
+
+  .introTextContainer{
+    width: 100%;
     min-width: unset;
   }
+
+  
 
   .contactMeBtn img,
   .myProjectsBtn img {
