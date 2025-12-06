@@ -1,39 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
 .skillsSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.skillsSection>img {
-  width: 500px;
+  justify-content: center;
+    
 }
 
 .htmlIcon,
 .cssIcon,
 .jsIcon,
 .reactIcon {
-width: 500px;
+width: 100%;
+
 }
 
 .htmlLabel,
 .cssLabel,
 .jsLabel,
 .reactLabel {
-width: 300px;
+width: 100%;
+
 }
 
-.skills{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  padding: 30px;
-}
 
 .skillItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 650px) {
+  .skillsSection {
+    height: 60vh;
+    margin-top: 0;
+  }
+
+  .skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
 }

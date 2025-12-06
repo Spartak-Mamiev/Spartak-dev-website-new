@@ -13,34 +13,44 @@ export function Header() {
       <div className={styles.navBar}>
         <ul>
           <li className={styles.home}>
-            <img
-              src="home.png"
-              alt="home icon"
-            />
+            <div className={styles.iconWrapper}>
+              <img
+                src="home.png"
+                alt="home icon"
+              />
+            </div>
           </li>
           <li className={styles.about}>
-            <img
-              src="about.png"
-              alt="about icon"
-            />
+            <div className={styles.iconWrapper}>
+              <img
+                src="about.png"
+                alt="about icon"
+              />
+            </div>
           </li>
           <li className={styles.skills}>
-            <img
-              src="skills.png"
-              alt="skills icon"
-            />
+            <div className={styles.iconWrapper}>
+              <img
+                src="skills.png"
+                alt="skills icon"
+              />
+            </div>
           </li>
           <li className={styles.projects}>
-            <img
-              src="projects.png"
-              alt="projects icon"
-            />
+            <div className={styles.iconWrapper}>
+              <img
+                src="projects.png"
+                alt="projects icon"
+              />
+            </div>
           </li>
           <li className={styles.contact}>
-            <img
-              src="contact.png"
-              alt="contact icon"
-            />
+            <div className={styles.iconWrapper}>
+              <img
+                src="contact.png"
+                alt="contact icon"
+              />
+            </div>
           </li>
         </ul>
       </div>
