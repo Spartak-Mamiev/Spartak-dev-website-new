@@ -1,4 +1,4 @@
-import styles from './IntroductionTest.module.css';
+import styles from './Introduction.module.css';
 
 export function Introduction() {
   return (
