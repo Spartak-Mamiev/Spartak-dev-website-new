@@ -11,7 +11,7 @@
 
 .navBar img {
   width: 100%;
-  min-width: 80px;
+  min-width: 100px;
 }
 
 .logoContainer {
@@ -141,6 +141,10 @@ background: url('nav-bg-black-4.png') no-repeat center center;
 .navBar{
   padding: 0 10px;
 }
+.navBar img {
+  width: 100%;
+  min-width: 80px;
+}
 
 .contact{
   margin-left: 10px;
@@ -153,7 +157,7 @@ background: url('nav-bg-black-4.png') no-repeat center center;
   align-items: center;
 }
 .navBar ul {
-  width: 95%;
+  width: 90%;
 }
 .contact{
   margin-left: 20px;
