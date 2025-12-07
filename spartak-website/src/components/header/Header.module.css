@@ -132,14 +132,14 @@ background: url('nav-bg-black-4.png') no-repeat center center;
   width: 80%;
 }  
 
-.contact{
+/* .contact{
   margin-left: 20px;
-}
+} */
 
 @media screen and (max-width: 600px) {
 
 .navBar{
-  padding: 0 10px;
+  padding: 0 30px;
 }
 .navBar img {
   width: 100%;
@@ -159,8 +159,8 @@ background: url('nav-bg-black-4.png') no-repeat center center;
 .navBar ul {
   width: 90%;
 }
-.contact{
+/* .contact{
   margin-left: 20px;
-}
+} */
 }
 }

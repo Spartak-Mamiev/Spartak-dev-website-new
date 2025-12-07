@@ -36,14 +36,14 @@ export function Header() {
               />
             </div>
           </li>
-          <li className={styles.projects}>
+          {/*           <li className={styles.projects}>
             <div className={styles.iconWrapper}>
               <img
                 src="projects.png"
                 alt="projects icon"
               />
             </div>
-          </li>
+          </li> */}
           <li className={styles.contact}>
             <div className={styles.iconWrapper}>
               <img
