@@ -1,0 +1,146 @@
+
+
+.contactSection{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameInputContainer,
+.emailInputContainer,
+.messageInputContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameInputContainer{
+ transform: translateY(80px);
+}
+.emailInputContainer{
+  transform: translateY(40px);
+}
+
+.nameLabel img,
+.emailLabel img{
+  transform: translate(15px, 30px);
+}
+
+label img{
+  width: 150px;
+  transform: translate(5px, 30px);
+}
+
+
+
+
+.nameInput,
+.emailInput {
+  background: url("email-box.png") no-repeat center center;
+  background-size: cover;
+  width: 400px;        
+  height: 80px;        
+  display: flex;
+  align-items: center;
+  padding: 0 20px;        
+}
+
+
+.nameInput input,
+.emailInput input {
+  width: 400px;
+  height: 40px;
+  padding-left: 20px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  color: #fff;            
+}
+
+.messageInput textarea{
+  background: url("message-box.png") no-repeat center center;
+  background-size: cover;
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 304px;       
+  min-height: 304px;       
+  display: flex;
+  align-items: center;
+  border: none;   
+  color: white;
+  padding: 30px 40px;
+  resize: none;
+}
+
+
+
+
+.messageInput textarea:focus{
+border: none;
+outline: none;
+}
+
+
+.messageInput{
+  width: 400px;
+  height: auto;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  color: #fff;            
+}
+
+.sendBtnContainer{
+  display: flex;
+  justify-content: center;
+}
+
+
+.sendBtn{
+  width: 10%;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sendBtn:hover {
+  filter: invert(1);
+  transform: scale(1.05);
+}
+
+.sendBtn:active {
+  transform: scale(0.95);
+}
+
+.sendBtn img{
+  width: 100%;
+}
+
+
+
+.someLinksContainer{
+display: flex;
+margin-top: 50px;
+}
+
+.someLinksContainer a{
+ width: 150px;
+}
+
+.someLinksContainer a:hover {
+  transform: scale(1.05);
+}
+
+.someLinksContainer a:active {
+  transform: scale(0.95);
+}
+.someLinksContainer img{
+  width: 100%;
+}
