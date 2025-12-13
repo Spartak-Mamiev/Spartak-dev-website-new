@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 
-.contactSection{
-  height: 90vh;
+ .contactSection{
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +19,7 @@
 }
 
 .nameInputContainer{
+z-index: 9999;
  transform: translateY(80px);
 }
 .emailInputContainer{
@@ -42,7 +44,7 @@ label img{
   background: url("email-box.png") no-repeat center center;
   background-size: cover;
   width: 400px;        
-  height: 80px;        
+  height: 60px;        
   display: flex;
   align-items: center;
   padding: 0 20px;        
@@ -52,12 +54,13 @@ label img{
 .nameInput input,
 .emailInput input {
   width: 400px;
-  height: 40px;
+  height: 60px;
   padding-left: 20px;
   border: none;
   background: transparent;
   outline: none;
-  font-size: 18px;
+  font-size: 1.5rem;
+  font-family: "Patrick Hand", cursive;
   color: #fff;            
 }
 
@@ -67,11 +70,14 @@ label img{
   max-width: 400px;
   min-width: 400px;
   max-height: 304px;       
-  min-height: 304px;       
+  min-height: 304px;
+  overflow: auto;  
   display: flex;
   align-items: center;
   border: none;   
   color: white;
+  font-size: 1.5rem;
+  font-family: "Patrick Hand", cursive;
   padding: 30px 40px;
   resize: none;
 }
@@ -103,6 +109,7 @@ outline: none;
 
 .sendBtn{
   width: 10%;
+  min-width: 150px;
   margin-top: 10px;
   background: none;
   border: none;
@@ -124,23 +131,59 @@ outline: none;
 }
 
 
+@media screen and (max-width: 500px) {
 
-.someLinksContainer{
-display: flex;
-margin-top: 50px;
+  .contactSection{
+  height: 60vh;
+
 }
 
-.someLinksContainer a{
- width: 150px;
+  .nameInput,
+  .emailInput {
+    width: 250px;
+  }
+
+  .messageInput{
+    display: flex;
+    justify-content: center;
+  }
+
+ .messageInput textarea{
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 200px;       
+  min-height: 200px;
+  font-size: 1rem;
+  padding: 20px 50px;
 }
 
-.someLinksContainer a:hover {
-  transform: scale(1.05);
+  .sendBtn{
+    width: 20%;
+    min-width: 100px;
+  }
+
+  .nameLabel img,
+.emailLabel img{
+  transform: translate(0px, 25px);
 }
 
-.someLinksContainer a:active {
-  transform: scale(0.95);
+label img{
+  width: 90px;
+  transform: translate(0px, 20px);
 }
-.someLinksContainer img{
-  width: 100%;
+
+.nameInput input,
+.emailInput input {
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+.sendBtn{
+
+  min-width: 80px;
+
+
+
+}
+  
 }

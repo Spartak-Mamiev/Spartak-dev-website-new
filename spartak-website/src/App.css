@@ -5,10 +5,12 @@
 }
 
 body {
-  position: relative;
-  min-height: 100vh;
+  height: 100%;
   background: none; /* remove default background */
   z-index: 0;
+  display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 /* Background image layer */
@@ -17,7 +19,7 @@ body::before {
   position: absolute;
   inset: 0;
   background: url('bg-paper-texture.jpg');
-  background-size: cover;
+  object-fit: cover; 
   background-repeat: no-repeat;
   background-position: center;
   filter: invert(1); /* invert only the background */

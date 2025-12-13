@@ -41,7 +41,8 @@ export function Contact() {
         <div className={styles.messageInput}>
           <textarea
             name="message"
-            id=""
+            id="messageInput"
+            maxLength={220}
           ></textarea>
         </div>
 
@@ -56,42 +57,6 @@ export function Contact() {
             />
           </button>
         </div>
-      </div>
-
-      <div className={styles.someLinksContainer}>
-        <a
-          href="https://www.instagram.com/spartak_visuals/?hl=nb"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.someLink}
-        >
-          <img
-            src="instagram-icon-drawn.png"
-            alt=""
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/spartak-mamiev-a20442161/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.someLink}
-        >
-          <img
-            src="linkedin.png"
-            alt=""
-          />
-        </a>
-        <a
-          href="https://github.com/Spartak-Mamiev"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.someLink}
-        >
-          <img
-            src="github-icon-drawn.png"
-            alt=""
-          />
-        </a>
       </div>
     </div>
   );

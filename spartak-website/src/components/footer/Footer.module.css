@@ -1,0 +1,43 @@
+
+footer{
+  position: fixed;
+  bottom: 50px;
+left: 50%;
+right: 50%;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.someLinksContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.someLinksContainer a{
+  
+  display: flex;
+  justify-content: center;
+ width: 100px;
+
+}
+
+.someLinksContainer a:hover {
+  transform: scale(1.05);
+}
+
+.someLinksContainer a:active {
+  transform: scale(0.95);
+}
+.someLinksContainer img{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+  footer{
+
+  }
+}

@@ -3,13 +3,13 @@ import styles from './Header.module.css';
 export function Header() {
   return (
     <div className={styles.header}>
-      <div className={styles.logoContainer}>
+      {/*       <div className={styles.logoContainer}>
         <img
           src="public/logo.png"
           alt="Logo"
           className={styles.logo}
         />
-      </div>
+      </div> */}
       <div className={styles.navBar}>
         <ul>
           <li className={styles.home}>
@@ -55,7 +55,7 @@ export function Header() {
         </ul>
       </div>
 
-      <div className={styles.modeToggleContainer}>
+      {/*       <div className={styles.modeToggleContainer}>
         <label htmlFor="toggle">
           <img
             src="sun-icon.png"
@@ -67,7 +67,7 @@ export function Header() {
           id="toggle"
           className={styles.toggle}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

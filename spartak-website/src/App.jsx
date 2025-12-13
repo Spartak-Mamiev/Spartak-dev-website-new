@@ -3,6 +3,7 @@ import { Introduction } from './components/introduction/Introduction';
 import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Contact } from './components/contact/Contact';
+import { Footer } from './components/footer/Footer';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header />
       <Contact />
+      <Footer />
     </>
   );
 }
