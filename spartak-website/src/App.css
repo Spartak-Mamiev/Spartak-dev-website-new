@@ -23,7 +23,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('bg-paper-texture.jpg');
+  background: url('/bg-paper-texture.jpg');
   object-fit: cover; 
   background-repeat: no-repeat;
   background-position: center;
