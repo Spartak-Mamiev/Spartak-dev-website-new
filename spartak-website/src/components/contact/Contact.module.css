@@ -2,7 +2,6 @@
 
 
  .contactSection{
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +18,7 @@
 }
 
 .nameInputContainer{
-z-index: 9999;
+ z-index: 9999;
  transform: translateY(80px);
 }
 .emailInputContainer{
@@ -28,7 +27,7 @@ z-index: 9999;
 
 .nameLabel img,
 .emailLabel img{
-  transform: translate(15px, 30px);
+  transform: translate(15px, 25px);
 }
 
 label img{
@@ -127,7 +126,7 @@ outline: none;
 }
 
 .sendBtn img{
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -135,7 +134,7 @@ outline: none;
 
   .contactSection{
   height: 60vh;
-
+   transform: translate(0px, -60px);
 }
 
   .nameInput,

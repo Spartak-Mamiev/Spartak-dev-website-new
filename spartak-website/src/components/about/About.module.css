@@ -1,49 +1,33 @@
 .aboutSection{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh;
+width: 80%;
+margin: auto;
+}
+
+.leftSide{
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.aboutHeader{
-width: 600px;
-
-}
-
-.aboutImages{
+.rightSide{
   width: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+}
+.marathonImg {
+  width: 50%;
 
 }
 
-.about{
-  display: flex;
-  flex-direction: row;
-  padding: 0 30px;
-}
+.freiaImg{
+  width: 50%;
 
-.about img{
-  width: 45%;
-  object-fit: contain;
-}
-
-
-
-.aboutImages img{
-  margin: auto;
-  width: 80%;
 }
 
 .clapperImg{
-  grid-area: 1 / 2 / 2 / 3;
-}
+  width: 100%;
 
-.marathonImg{
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.freiaImg {
-  grid-area: 2 / 1 / 3 / 3;
 }

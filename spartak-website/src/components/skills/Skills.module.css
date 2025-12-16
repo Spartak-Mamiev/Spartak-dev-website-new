@@ -4,22 +4,17 @@
   box-sizing: border-box;
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-
-.skillsSection {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-    
+  flex-wrap: wrap;
+  
+  margin: 0 auto;     /* ← centers the whole block */
+  gap: 2rem;
 }
+
+
 
 .htmlIcon,
 .cssIcon,
@@ -34,7 +29,6 @@ width: 100%;
 .jsLabel,
 .reactLabel {
 width: 100%;
-
 }
 
 
@@ -45,20 +39,17 @@ width: 100%;
   max-width: 300px;
 }
 
-@media screen and (max-width: 1200px) {
-
-}
 
 @media screen and (max-width: 650px) {
-  .skillsSection {
-    height: 70vh;
-    margin-top: 0;
-  }
 
   .skillItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 150px;
+}
+
+.skills{
+  gap: 0;
 }
 }
