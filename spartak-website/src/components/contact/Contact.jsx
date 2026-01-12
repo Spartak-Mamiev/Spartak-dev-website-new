@@ -1,14 +1,19 @@
 import styles from './Contact.module.css';
 
+import nameLabel from '/public/name.png';
+import emailLabel from '/public/email.png';
+import messageLabel from '/public/message.png';
+import sendBtnImage from '/public/send-btn.png';
+
 export function Contact() {
   return (
     <div className={styles.contactSection}>
       <div className={styles.nameInputContainer}>
         <div className={styles.nameLabel}>
-          <label htmlFor="">
+          <label htmlFor="nameInput">
             <img
-              src="name.png"
-              alt=""
+              src={nameLabel}
+              alt="Name label"
             />
           </label>
         </div>
@@ -20,8 +25,8 @@ export function Contact() {
         <div className={styles.emailLabel}>
           <label htmlFor="">
             <img
-              src="email.png"
-              alt=""
+              src={emailLabel}
+              alt="Email label"
             />
           </label>
         </div>
@@ -33,8 +38,8 @@ export function Contact() {
         <div className={styles.messageLabel}>
           <label htmlFor="">
             <img
-              src="message.png"
-              alt=""
+              src={messageLabel}
+              alt="Message label"
             />
           </label>
         </div>
@@ -52,7 +57,7 @@ export function Contact() {
             className={styles.sendBtn}
           >
             <img
-              src="send-btn.png"
+              src={sendBtnImage}
               alt="Send button"
             />
           </button>

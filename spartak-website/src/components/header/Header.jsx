@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
@@ -13,44 +14,54 @@ export function Header() {
       <div className={styles.navBar}>
         <ul>
           <li className={styles.home}>
-            <div className={styles.iconWrapper}>
-              <img
-                src="home.png"
-                alt="home icon"
-              />
-            </div>
+            <Link to="/">
+              <div className={styles.iconWrapper}>
+                <img
+                  src="home.png"
+                  alt="home icon"
+                />
+              </div>
+            </Link>
           </li>
           <li className={styles.about}>
-            <div className={styles.iconWrapper}>
-              <img
-                src="about.png"
-                alt="about icon"
-              />
-            </div>
+            {/*     <Link to="/about">
+              <div className={styles.iconWrapper}>
+                <img
+                  src="about.png"
+                  alt="about icon"
+                />
+              </div>
+            </Link> */}
           </li>
           <li className={styles.skills}>
-            <div className={styles.iconWrapper}>
-              <img
-                src="skills.png"
-                alt="skills icon"
-              />
-            </div>
+            <Link to="/skills">
+              <div className={styles.iconWrapper}>
+                <img
+                  src="skills.png"
+                  alt="skills icon"
+                />
+              </div>
+            </Link>
           </li>
-          {/*           <li className={styles.projects}>
-            <div className={styles.iconWrapper}>
-              <img
-                src="projects.png"
-                alt="projects icon"
-              />
-            </div>
-          </li> */}
+          <li className={styles.projects}>
+            <Link to="/projects">
+              <div className={styles.iconWrapper}>
+                <img
+                  src="projects.png"
+                  alt="projects icon"
+                />
+              </div>
+            </Link>
+          </li>
           <li className={styles.contact}>
-            <div className={styles.iconWrapper}>
-              <img
-                src="contact.png"
-                alt="contact icon"
-              />
-            </div>
+            <Link to="/contact">
+              <div className={styles.iconWrapper}>
+                <img
+                  src="contact.png"
+                  alt="contact icon"
+                />
+              </div>
+            </Link>
           </li>
         </ul>
       </div>

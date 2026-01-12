@@ -1,5 +1,14 @@
 import styles from './Skills.module.css';
 
+import htmlIcon from '/public/html-icon-drawn.png';
+import htmlLabel from '/public/html.png';
+import cssIcon from '/public/css-icon-drawn.png';
+import cssLabel from '/public/css.png';
+import jsIcon from '/public/js-icon-drawn.png';
+import jsLabel from '/public/js.png';
+import reactIcon from '/public/react-icon-drawn.png';
+import reactLabel from '/public/react.png';
+
 export function Skills() {
   return (
     <div className={styles.skillsSection}>
@@ -8,14 +17,14 @@ export function Skills() {
           <div className={styles.htmlIconContainer}>
             <img
               className={styles.htmlIcon}
-              src="html-icon-drawn.png"
+              src={htmlIcon}
               alt="HTML icon"
             />
           </div>
           <div className={styles.htmlLabelContainer}>
             <img
               className={styles.htmlLabel}
-              src="html.png"
+              src={htmlLabel}
               alt="HTML5"
             />
           </div>
@@ -25,14 +34,14 @@ export function Skills() {
           <div className={styles.cssIconContainer}>
             <img
               className={styles.cssIcon}
-              src="css-icon-drawn.png"
+              src={cssIcon}
               alt="CSS icon"
             />
           </div>
           <div className={styles.cssLabelContainer}>
             <img
               className={styles.cssLabel}
-              src="css.png"
+              src={cssLabel}
               alt="CSS"
             />
           </div>
@@ -42,14 +51,14 @@ export function Skills() {
           <div className={styles.jsIconContainer}>
             <img
               className={styles.jsIcon}
-              src="js-icon-drawn.png"
+              src={jsIcon}
               alt="JavaScript icon"
             />
           </div>
           <div className={styles.jsLabelContainer}>
             <img
               className={styles.jsLabel}
-              src="js.png"
+              src={jsLabel}
               alt="JavaScript"
             />
           </div>
@@ -59,14 +68,14 @@ export function Skills() {
           <div className={styles.reactIconContainer}>
             <img
               className={styles.reactIcon}
-              src="react-icon-drawn.png"
+              src={reactIcon}
               alt="React icon"
             />
           </div>
           <div className={styles.reactLabelContainer}>
             <img
               className={styles.reactLabel}
-              src="react.png"
+              src={reactLabel}
               alt="React"
             />
           </div>

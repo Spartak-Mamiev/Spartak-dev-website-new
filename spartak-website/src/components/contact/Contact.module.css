@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .nameInputContainer,
@@ -19,20 +20,24 @@
 
 .nameInputContainer{
  z-index: 9999;
- transform: translateY(80px);
+position: relative;
+margin-bottom: 50px;
 }
 .emailInputContainer{
-  transform: translateY(40px);
+position: relative;
+margin-bottom: 50px;
 }
 
 .nameLabel img,
 .emailLabel img{
-  transform: translate(15px, 25px);
+position: absolute;
+transform: translate(-70px, -60px);
 }
 
 label img{
   width: 150px;
-  transform: translate(5px, 30px);
+position: absolute;
+transform: translate(-70px, -60px);
 }
 
 
@@ -40,7 +45,7 @@ label img{
 
 .nameInput,
 .emailInput {
-  background: url("email-box.png") no-repeat center center;
+  background: url("/email-box.png") no-repeat center center;
   background-size: cover;
   width: 400px;        
   height: 60px;        
@@ -64,7 +69,7 @@ label img{
 }
 
 .messageInput textarea{
-  background: url("message-box.png") no-repeat center center;
+  background: url("/message-box.png") no-repeat center center;
   background-size: cover;
   max-width: 400px;
   min-width: 400px;
@@ -107,8 +112,8 @@ outline: none;
 
 
 .sendBtn{
-  width: 10%;
-  min-width: 150px;
+  width: 5%;
+  min-width: 100px;
   margin-top: 10px;
   background: none;
   border: none;
@@ -134,12 +139,18 @@ outline: none;
 
   .contactSection{
   height: 60vh;
-   transform: translate(0px, -60px);
+
 }
 
   .nameInput,
   .emailInput {
     width: 250px;
+   
+  }
+
+  .emailInputContainer,
+  .nameInputContainer{
+     margin-bottom: 0;
   }
 
   .messageInput{
@@ -154,6 +165,7 @@ outline: none;
   min-height: 200px;
   font-size: 1rem;
   padding: 20px 50px;
+  
 }
 
   .sendBtn{
@@ -163,11 +175,14 @@ outline: none;
 
   .nameLabel img,
 .emailLabel img{
+  width: 80px;
+  position: relative;
   transform: translate(0px, 25px);
 }
 
 label img{
-  width: 90px;
+  width: 80px;
+  position: relative;
   transform: translate(0px, 20px);
 }
 

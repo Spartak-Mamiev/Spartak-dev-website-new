@@ -1,6 +1,7 @@
+import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/header/Header';
 import { Introduction } from './components/introduction/Introduction';
-import { About } from './components/about/About';
+
 import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Contact } from './components/contact/Contact';
@@ -11,7 +12,33 @@ function App() {
   return (
     <>
       <Header />
-      <Introduction />
+
+      {/* This is the ONLY part that navigates */}
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={<Introduction />}
+          />
+          {/*         <Route
+            path="/about"
+            element={<About />}
+          /> */}
+          <Route
+            path="/projects"
+            element={<Projects />}
+          />
+          <Route
+            path="/skills"
+            element={<Skills />}
+          />
+          <Route
+            path="/contact"
+            element={<Contact />}
+          />
+        </Routes>
+      </main>
+
       <Footer />
     </>
   );

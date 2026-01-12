@@ -9,25 +9,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
-body {
-  background: none; /* remove default background */
-  z-index: 0;
+body{
+  background: rgb(44, 44, 44);
 }
 
-/* Background image layer */
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('/bg-paper-texture.jpg');
-  object-fit: cover; 
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: invert(1); /* invert only the background */
-  z-index: -1; /* place behind content */
-  pointer-events: none;
+
+
+
+
+main{
+  height: 60vh;
 }

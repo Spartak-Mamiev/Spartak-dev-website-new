@@ -2,7 +2,14 @@ import styles from './Projects.module.css';
 
 export function Projects() {
   return (
-    <div className={styles.projectsSection}>
+    <div>
+      <img
+        src="/public/calculator/7.png"
+        alt=""
+      />
+    </div>
+
+    /*     <div className={styles.projectsSection}>
       <img
         src="projects.png"
         alt=""
@@ -34,6 +41,6 @@ export function Projects() {
           />
         </div>
       </div>
-    </div>
+    </div> */
   );
 }

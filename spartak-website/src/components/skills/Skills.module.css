@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skills {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
   margin: 0 auto;     /* ← centers the whole block */
   gap: 2rem;
 }
