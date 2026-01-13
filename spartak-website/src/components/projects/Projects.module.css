@@ -30,3 +30,30 @@
   padding: 20px;
 }
 
+.digits img{
+  width: clamp(2rem, 8rem, 11rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.digits img:hover{
+  scale: 1.1;
+}
+.digits img:active{
+  scale: 1;
+}
+
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.digits div{
+  display: flex;
+  gap: 10px;
+}
+
