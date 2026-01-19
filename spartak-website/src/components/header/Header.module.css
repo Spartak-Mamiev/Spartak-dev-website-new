@@ -41,24 +41,24 @@ margin-right: auto;
 
 
 .home img:hover{
-background: url('nav-bg-black-1.png') no-repeat center center;
+background: url('/nav-bg-black-1.png') no-repeat center center;
   background-size: contain;
 }
 
 .about img:hover{
-background: url('nav-bg-black-2.png') no-repeat center center;
+background: url('/nav-bg-black-2.png') no-repeat center center;
   background-size: contain;
 }
 .skills img:hover{
-background: url('nav-bg-black-4.png') center center;
+background: url('/nav-bg-black-4.png') center center;
 background-size: contain;
 }
 .projects img:hover{
-background: url('nav-bg-black-3.png') center center;
+background: url('/nav-bg-black-3.png') center center;
 background-size: contain;
 }
 .contact img:hover{
-background: url('nav-bg-black-4.png') no-repeat center center;
+background: url('/nav-bg-black-4.png') no-repeat center center;
   background-size: contain;
 }
 
