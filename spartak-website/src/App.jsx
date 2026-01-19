@@ -11,8 +11,6 @@ function App() {
   return (
     <>
       <Header />
-
-      {/* This is the ONLY part that navigates */}
       <main>
         <Routes>
           <Route

@@ -31,7 +31,7 @@
 }
 
 .digits img{
-  width: clamp(2rem, 8rem, 11rem);
+  width: clamp(2rem, 5rem, 11rem);
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -55,5 +55,15 @@
 .digits div{
   display: flex;
   gap: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+
+.display {
+  width: 420px;
 }
 

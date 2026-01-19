@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './Projects.module.css';
 import nine from '/public/calculator/9.png';
 import eight from '/public/calculator/8.png';
@@ -22,8 +23,9 @@ import display from '/public/calculator/display.png';
 export function Projects() {
   return (
     <div>
-      <div>
+      <div className={styles.displayContainer}>
         <img
+          className={styles.display}
           src={display}
           alt="display"
         />
@@ -35,6 +37,7 @@ export function Projects() {
             alt="7"
             value="7"
           />
+
           <img
             src={eight}
             alt="8"
