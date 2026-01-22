@@ -14,7 +14,7 @@ function App() {
       <main>
         <Routes>
           <Route
-            path="/"
+            index
             element={<Introduction />}
           />
           {/*         <Route
