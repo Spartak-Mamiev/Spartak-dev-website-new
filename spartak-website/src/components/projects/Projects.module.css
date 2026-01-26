@@ -1,48 +1,23 @@
-.projectsSection>img{
-  width: 500px;
-  
-}
 
-.projectsSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.projects{
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.project{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.projectLabel,
-.projectImage {
-  width: 50%;
-  padding: 20px;
-}
-
-.digits img{
-  width: clamp(2rem, 5rem, 11rem);
+button {
+  width: 80px;
+  height: 80px;
+  border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.digits img:hover{
-  scale: 1.1;
-}
-.digits img:active{
-  scale: 1;
+button:hover {
+  transform: scale(1.1);
 }
 
+button:active {
+  transform: scale(1);
+}
 
 .digits {
   display: flex;
@@ -52,18 +27,38 @@
   margin-top: 20px;
 }
 
-.digits div{
+.digits div {
   display: flex;
   gap: 10px;
-}
-
-button {
-  background: none;
-  border: none;
 }
 
 
 .display {
   width: 420px;
+  height: 100px;
+  background-image: url('/calculator/display.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+
+.oneBtn { background-image: url('/calculator/1.png'); }
+.twoBtn { background-image: url('/calculator/2.png'); }
+.threeBtn { background-image: url('/calculator/3.png'); }
+.fourBtn { background-image: url('/calculator/4.png'); }
+.fiveBtn { background-image: url('/calculator/5.png'); }
+.sixBtn { background-image: url('/calculator/6.png'); }
+.sevenBtn { background-image: url('/calculator/7.png'); }
+.eightBtn { background-image: url('/calculator/8.png'); }
+.nineBtn { background-image: url('/calculator/9.png'); }
+.zeroBtn { background-image: url('/calculator/0.png'); }
+
+.plusBtn { background-image: url('/calculator/plus.png'); }
+.minusBtn { background-image: url('/calculator/minus.png'); }
+.multiplyBtn { background-image: url('/calculator/multiply.png'); }
+.divideBtn { background-image: url('/calculator/divide.png'); }
+
+.comaBtn { background-image: url('/calculator/coma.png'); }
+.deleteBtn { background-image: url('/calculator/delete.png'); }
+.cancelBtn { background-image: url('/calculator/cancel.png'); }
+.equalBtn { background-image: url('/calculator/equal.png'); }

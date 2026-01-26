@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './Projects.module.css';
 import nine from '/public/calculator/9.png';
 import eight from '/public/calculator/8.png';
@@ -18,104 +17,90 @@ import equal from '/public/calculator/equal.png';
 import coma from '/public/calculator/coma.png';
 import deleteBtn from '/public/calculator/delete.png';
 import cancel from '/public/calculator/cancel.png';
-import display from '/public/calculator/display.png';
+/* import display from '/public/calculator/display.png'; */
 
 export function Projects() {
   return (
     <div>
       <div className={styles.displayContainer}>
-        <img
+        <p className={styles.display}></p>
+        {/*    <img
           className={styles.display}
           src={display}
           alt="display"
-        />
+        /> */}
       </div>
       <div className={styles.digits}>
         <div>
-          <img
-            src={seven}
-            alt="7"
+          <button
+            className={styles.sevenBtn}
             value="7"
-          />
+          ></button>
 
-          <img
-            src={eight}
-            alt="8"
+          <button
+            className={styles.eightBtn}
             value="8"
-          />
-          <img
-            src={nine}
-            alt="9"
+          ></button>
+
+          <button
+            className={styles.nineBtn}
             value="9"
-          />
-          <img
-            src={deleteBtn}
-            alt="delete"
-          />
+          ></button>
+
+          <button className={styles.deleteBtn}></button>
         </div>
         <div>
-          <img
-            src={four}
-            alt="4"
-          />
-          <img
-            src={five}
-            alt="5"
-          />
-          <img
-            src={six}
-            alt="6"
-          />
-          <img
-            src={plus}
-            alt="plus"
-          />
+          <button
+            className={styles.fourBtn}
+            value="4"
+          ></button>
+
+          <button
+            className={styles.fiveBtn}
+            value="5"
+          ></button>
+
+          <button
+            className={styles.sixBtn}
+            value="6"
+          ></button>
+
+          <button className={styles.plusBtn}></button>
         </div>
         <div>
-          <img
-            src={one}
-            alt="1"
-          />
-          <img
-            src={two}
-            alt="2"
-          />
-          <img
-            src={three}
-            alt="3"
-          />
-          <img
-            src={minus}
-            alt="minus"
-          />
+          <button
+            className={styles.oneBtn}
+            value="1"
+          ></button>
+
+          <button
+            className={styles.twoBtn}
+            value="2"
+          ></button>
+
+          <button
+            className={styles.threeBtn}
+            value="3"
+          ></button>
+
+          <button className={styles.minusBtn}></button>
         </div>
         <div>
-          <img
-            src={coma}
-            alt="coma"
-          />
-          <img
-            src={zero}
-            alt="0"
-          />
-          <img
-            src={divide}
-            alt="divide"
-          />
-          <img
-            src={multiply}
-            alt="multiply"
-          />
+          <button className={styles.comaBtn}></button>
+
+          <button
+            className={styles.zeroBtn}
+            value="0"
+          ></button>
+
+          <button className={styles.divideBtn}></button>
+
+          <button className={styles.multiplyBtn}></button>
         </div>
         <div>
-          <img
-            src={cancel}
-            alt="cancel"
-          />
-          <img
-            src={equal}
-            alt="equal"
-          />
+          <button className={styles.cancelBtn}></button>
+
+          <button className={styles.equalBtn}></button>
         </div>
       </div>
     </div>
