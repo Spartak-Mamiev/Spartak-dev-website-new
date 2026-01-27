@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Projects.module.css';
 import nine from '/public/calculator/9.png';
 import eight from '/public/calculator/8.png';
-import seven from '/calculator/7.png';
+import seven from '/public/calculator/7.png';
 import six from '/public/calculator/6.png';
 import five from '/public/calculator/5.png';
 import four from '/public/calculator/4.png';
