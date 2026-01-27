@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Introduction.module.css';
 
 import introText from '/intro-text-drawn.png';
@@ -17,18 +18,22 @@ export function Introduction() {
           />
         </div>
         <div className={styles.introCtaButtons}>
-          <button className={styles.contactMeBtn}>
-            <img
-              src={contactBtn}
-              alt="Contact me button"
-            />
-          </button>
-          <button className={styles.myProjectsBtn}>
-            <img
-              src={projectsBtn}
-              alt="My projects button"
-            />
-          </button>
+          <Link to="/contact">
+            <button className={styles.contactMeBtn}>
+              <img
+                src={contactBtn}
+                alt="Contact me button"
+              />
+            </button>
+          </Link>
+          <Link to="/projects">
+            <button className={styles.myProjectsBtn}>
+              <img
+                src={projectsBtn}
+                alt="My projects button"
+              />
+            </button>
+          </Link>
         </div>
       </div>
       <div className={styles.avatarImageContainer}>
