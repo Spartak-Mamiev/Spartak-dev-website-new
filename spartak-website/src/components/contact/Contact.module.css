@@ -65,7 +65,8 @@ transform: translate(-70px, -60px);
   outline: none;
   font-size: 1.5rem;
   font-family: "Patrick Hand", cursive;
-  color: #fff;            
+  color: #fff; 
+  background-color: transparent !important;           
 }
 
 .messageInput textarea{
@@ -133,6 +134,18 @@ outline: none;
 .sendBtn img{
   width: 80%;
 }
+
+/* 🔥 Remove browser autofill white background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 9999s ease-in-out 0s;
+  caret-color: white;
+}
+
 
 
 @media screen and (max-width: 500px) {

@@ -6,8 +6,37 @@ import messageLabel from '/public/message.png';
 import sendBtnImage from '/public/send-btn.png';
 
 export function Contact() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append('access_key', '74d45a3a-df42-489a-a6ca-ef0b71a8562c');
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert(
+        "Message recieved, I'll get back to you as soon as posible.",
+        event.target.reset(),
+      );
+    }
+  };
+
   return (
-    <div className={styles.contactSection}>
+    <form
+      className={styles.contactSection}
+      onSubmit={onSubmit}
+    >
       <div className={styles.nameInputContainer}>
         <div className={styles.nameLabel}>
           <label htmlFor="nameInput">
@@ -18,7 +47,11 @@ export function Contact() {
           </label>
         </div>
         <div className={styles.nameInput}>
-          <input type="text" />
+          <input
+            type="text"
+            name="name"
+            required
+          />
         </div>
       </div>
       <div className={styles.emailInputContainer}>
@@ -31,7 +64,12 @@ export function Contact() {
           </label>
         </div>
         <div className={styles.emailInput}>
-          <input type="text" />
+          <input
+            type="text"
+            name="email"
+            required
+            autoComplete="off"
+          />
         </div>
       </div>
       <div className={styles.messageInputContainer}>
@@ -48,6 +86,7 @@ export function Contact() {
             name="message"
             id="messageInput"
             maxLength={220}
+            required
           ></textarea>
         </div>
 
@@ -63,6 +102,6 @@ export function Contact() {
           </button>
         </div>
       </div>
-    </div>
+    </form>
   );
 }

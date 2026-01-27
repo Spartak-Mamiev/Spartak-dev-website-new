@@ -1,9 +1,9 @@
 import styles from './Introduction.module.css';
 
-import introText from '/public/intro-text-drawn.png';
-import contactBtn from '/public/contact-me-btn.png';
-import projectsBtn from '/public/my-projects-btn.png';
-import avatar from '/public/Untitled_Artwork 28.png';
+import introText from '/intro-text-drawn.png';
+import contactBtn from '/contact-me-btn.png';
+import projectsBtn from '/my-projects-btn.png';
+import avatar from '/Untitled_Artwork 28.png';
 
 export function Introduction() {
   return (

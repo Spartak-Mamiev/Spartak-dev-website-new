@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 button {
   width: 80px;
@@ -36,9 +37,20 @@ button:active {
 .display {
   width: 420px;
   height: 100px;
+  background: transparent;
+  border: none;
   background-image: url('/calculator/display.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  text-align: right;
+  padding: 0px 30px;
+  font-family: "Patrick Hand", cursive;
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+.display:focus{
+  outline: none;
 }
 
 

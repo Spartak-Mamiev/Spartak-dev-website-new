@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import styles from './Projects.module.css';
 import nine from '/public/calculator/9.png';
 import eight from '/public/calculator/8.png';
-import seven from '/public/calculator/7.png';
+import seven from '/calculator/7.png';
 import six from '/public/calculator/6.png';
 import five from '/public/calculator/5.png';
 import four from '/public/calculator/4.png';
@@ -20,123 +21,128 @@ import cancel from '/public/calculator/cancel.png';
 /* import display from '/public/calculator/display.png'; */
 
 export function Projects() {
+  const [displayValue, setDisplayValue] = useState('');
+
+  const appendValue = (value) => {
+    setDisplayValue((prev) => prev + value);
+  };
+
+  const handleDelete = () => {
+    setDisplayValue((prev) => prev.slice(0, -1));
+  };
+
+  const handleClear = () => {
+    setDisplayValue('');
+  };
+
+  const handleCalculate = () => {
+    try {
+      const expression = displayValue.replace(',', '.');
+      const result = Function(`return ${expression}`)();
+      setDisplayValue(String(result));
+    } catch (error) {
+      setDisplayValue('Error');
+    }
+  };
+
   return (
     <div>
       <div className={styles.displayContainer}>
-        <p className={styles.display}></p>
-        {/*    <img
+        <input
           className={styles.display}
-          src={display}
-          alt="display"
-        /> */}
+          value={displayValue}
+          readOnly
+        />
       </div>
+
       <div className={styles.digits}>
         <div>
           <button
             className={styles.sevenBtn}
-            value="7"
-          ></button>
-
+            onClick={() => appendValue('7')}
+          />
           <button
             className={styles.eightBtn}
-            value="8"
-          ></button>
-
+            onClick={() => appendValue('8')}
+          />
           <button
             className={styles.nineBtn}
-            value="9"
-          ></button>
-
-          <button className={styles.deleteBtn}></button>
+            onClick={() => appendValue('9')}
+          />
+          <button
+            className={styles.deleteBtn}
+            onClick={handleDelete}
+          />
         </div>
+
         <div>
           <button
             className={styles.fourBtn}
-            value="4"
-          ></button>
-
+            onClick={() => appendValue('4')}
+          />
           <button
             className={styles.fiveBtn}
-            value="5"
-          ></button>
-
+            onClick={() => appendValue('5')}
+          />
           <button
             className={styles.sixBtn}
-            value="6"
-          ></button>
-
-          <button className={styles.plusBtn}></button>
+            onClick={() => appendValue('6')}
+          />
+          <button
+            className={styles.plusBtn}
+            onClick={() => appendValue('+')}
+          />
         </div>
+
         <div>
           <button
             className={styles.oneBtn}
-            value="1"
-          ></button>
-
+            onClick={() => appendValue('1')}
+          />
           <button
             className={styles.twoBtn}
-            value="2"
-          ></button>
-
+            onClick={() => appendValue('2')}
+          />
           <button
             className={styles.threeBtn}
-            value="3"
-          ></button>
-
-          <button className={styles.minusBtn}></button>
+            onClick={() => appendValue('3')}
+          />
+          <button
+            className={styles.minusBtn}
+            onClick={() => appendValue('-')}
+          />
         </div>
-        <div>
-          <button className={styles.comaBtn}></button>
 
+        <div>
+          <button
+            className={styles.comaBtn}
+            onClick={() => appendValue('.')}
+          />
           <button
             className={styles.zeroBtn}
-            value="0"
-          ></button>
-
-          <button className={styles.divideBtn}></button>
-
-          <button className={styles.multiplyBtn}></button>
+            onClick={() => appendValue('0')}
+          />
+          <button
+            className={styles.divideBtn}
+            onClick={() => appendValue('/')}
+          />
+          <button
+            className={styles.multiplyBtn}
+            onClick={() => appendValue('*')}
+          />
         </div>
-        <div>
-          <button className={styles.cancelBtn}></button>
 
-          <button className={styles.equalBtn}></button>
+        <div>
+          <button
+            className={styles.cancelBtn}
+            onClick={handleClear}
+          />
+          <button
+            className={styles.equalBtn}
+            onClick={handleCalculate}
+          />
         </div>
       </div>
     </div>
-
-    /*     <div className={styles.projectsSection}>
-      <img
-        src="projects.png"
-        alt=""
-      />
-      <div className={styles.projects}>
-        <div className={styles.project}>
-          <img
-            className={styles.projectLabel}
-            src={ecomLable}
-            alt="E-commerce Project label"
-          />
-          <img
-            className={styles.projectImage}
-            src="ecommerce-image-widescreen.png"
-            alt="
-          E-commerce Project image"
-          />
-        </div>
-        <div className={styles.project}>
-          <img
-            className={styles.projectLabel}
-            src="calculator-app-label.png"
-            alt="Calculator Project label"
-          />
-          <img
-            className={styles.projectImage}
-            src="calculator-screen-shot.png"
-            alt="Calculator Project"
-          />
-        </div>
-      </div>
-    </div> */
   );
 }
