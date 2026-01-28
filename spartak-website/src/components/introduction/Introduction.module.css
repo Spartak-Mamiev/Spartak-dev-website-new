@@ -57,6 +57,7 @@ min-width: 450px;
 
 .introCtaButtons{
   width: 60%;
+  min-width: 300px;
   display: flex;
   justify-content: left;
   justify-content: space-between;
