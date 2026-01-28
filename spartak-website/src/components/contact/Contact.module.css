@@ -164,6 +164,11 @@ textarea:-webkit-autofill {
   .emailInputContainer,
   .nameInputContainer{
      margin-bottom: 0;
+     height: 80px;
+  }
+
+  .messageInputContainer{
+    height: 290px;
   }
 
   .messageInput{
@@ -184,11 +189,13 @@ textarea:-webkit-autofill {
   .sendBtn{
     width: 20%;
     min-width: 100px;
+    height: 50px;
   }
 
   .nameLabel img,
 .emailLabel img{
   width: 80px;
+  height: 50px;
   position: relative;
   transform: translate(0px, 25px);
 }
@@ -203,14 +210,6 @@ label img{
 .emailInput input {
   font-size: 1rem;
   padding-left: 5px;
-}
-
-.sendBtn{
-
-  min-width: 80px;
-
-
-
 }
   
 }

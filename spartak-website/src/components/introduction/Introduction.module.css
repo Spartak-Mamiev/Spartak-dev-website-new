@@ -115,7 +115,7 @@ align-items: center;
 @media screen and (max-width: 400px) {
 
   .introduction{
-    margin:0;
+    margin:40px 0px 0px 0px;
     padding: 0;
    
   }
@@ -124,17 +124,17 @@ align-items: center;
     width: 100%;
   }
   .avatarImage {
-    width: 80%;
+    width: 110%;
     min-width: unset;
   }
 
   .introText{
-    width: 50%;
-    min-width: 200px;
+    width: 100%;
+    min-width: 300px;
   }
 
   .introTextContainer{
-    width: 50%;
+    width: 100%;
     min-width: unset;
   }
 

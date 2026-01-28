@@ -74,3 +74,10 @@ button:active {
 .deleteBtn { background-image: url('/calculator/delete.png'); }
 .cancelBtn { background-image: url('/calculator/cancel.png'); }
 .equalBtn { background-image: url('/calculator/equal.png'); }
+
+
+@media screen and (max-width: 600px) {
+  .display {
+    width: 400px;
+  }
+}
